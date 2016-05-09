@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  listing_type: MyText
+  listing_description: MyText
+  price: 1
+  number_guest_accomadate: 1
+  country: MyText
+  city: MyText
+
+two:
+  listing_type: MyText
+  listing_description: MyText
+  price: 1
+  number_guest_accomadate: 1
+  country: MyText
+  city: MyText

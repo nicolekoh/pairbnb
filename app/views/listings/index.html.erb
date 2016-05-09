@@ -1,0 +1,14 @@
+<h1>Listings#index</h1>
+<p>Find me in app/views/listings/index.html.erb</p>
+<% @listings.each do |listing| %>
+	<%=listing.id %>
+	<%=listing.listing_type %>
+	<%=listing.listing_description %>
+	<%=listing.price %>
+	<%=listing.number_guest_accomadate %>
+	<%=listing.city %>
+	<%=listing.country %>
+	<%= link_to 'See this listing', listing_path(listing) %>
+	<%= link_to 'Delete this listing', listing_path(listing), method: :delete, data: { confirm: 'Are you sure?' } %>
+	<br>
+<%end%>

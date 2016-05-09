@@ -27,6 +27,14 @@ gem 'clearance'
 
 gem 'figaro'
 
+gem 'country_state_select', '3.0.1'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+
+gem 'omniauth-facebook'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

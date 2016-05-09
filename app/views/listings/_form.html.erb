@@ -1,0 +1,21 @@
+<%= simple_form_for @listing  do |f| %>
+  <%= f.label :listing_type %><br />
+  <%= f.text_field :listing_type %><br />
+  
+  <%= f.label :listing_description %><br />
+  <%= f.text_field :listing_description %><br />
+  
+  <%= f.label :price %><br />
+  <%= f.text_area :price %><br />
+  
+  <%= f.label :number_guest_accomadate %><br />
+  <%= f.select :number_guest_accomadate,[[1],[2],[3],[4],[5],[6]] %><br />
+
+  <%= f.input :country, label:"Country", collection: CountryStateSelect.countries_collection %> 
+  <%= f.input :state, CountryStateSelect.state_options(label:"State/Province", form: f, field_names: {:country => :country, :state => :state}) %>
+  <%= f.input :city, CountryStateSelect.city_options(label:"City", form: f, field_names: {:state => :state, :city => :city})%>
+
+  
+  <%= f.submit %>
+
+<% end %>
