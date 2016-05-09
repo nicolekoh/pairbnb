@@ -13,4 +13,19 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+//= require chosen-jquery
+//= require country_state_select
+
+
+$(document).on('ready page:load', function(){
+	return CountryStateSelect({
+		country_id: 'listing_country',
+		state_id: 'listing_state',
+		city_id: 'listing_city',
+		city_place_holder: 'Please select city',
+		state_place_holder: 'Please select state'
+	})
+})
+
